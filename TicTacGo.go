@@ -4,7 +4,6 @@ import(
 	"os"
 	"github.com/therecipe/qt/widgets"
 	"github.com/therecipe/qt/core"
-
 )
 
 type MocLabel struct {
@@ -240,7 +239,7 @@ func popup(winner string) {
 	var myWinner string
 	switch winner {
 	default:
-		myWinner = "There was an error."
+		myWinner = "There was an error. "
 	case "x", "X":
 		myWinner = "Player X won!!!!!"
 	case "o", "O":
@@ -248,15 +247,18 @@ func popup(winner string) {
 	case "tie":
 		myWinner = "No one won!!!"
 	}
-	message := widgets.NewQMessageBox2(widgets.QMessageBox__NoIcon, "Game Over", myWinner, widgets.QMessageBox__Ok, nil, 0)
-	message.AddButton3(widgets.QMessageBox__Cancel  )
+	myWinner += "\nPlay again?"
+	message := widgets.NewQMessageBox2(widgets.QMessageBox__NoIcon, "Game Over", myWinner, widgets.QMessageBox__Yes, nil, 0)
+	message.AddButton3(widgets.QMessageBox__No  )
 	rtn := message.Exec()
+
 	switch  rtn {
-	case 1024:
+	case 16384:
 		//repopulate here
+
 		reset()
 		myBoard.Reset()
-	case 4194304:
+	case 65536:
 		//exit here
 		application.QuitDefault()
 	}
