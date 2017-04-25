@@ -21,7 +21,7 @@ func (game *GoPlayBoard) SwitchTurn(){
 
 }
 
-func (game *GoPlayBoard)WhoTurn() string {
+func (game *GoPlayBoard) WhoTurn() string {
 	return  game.turn
 }
 func (game *GoPlayBoard) SetSquare(i int, y int) {
