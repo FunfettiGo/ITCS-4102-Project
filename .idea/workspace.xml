@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50bb8513-6d3e-4dfd-8a21-3f8c47616fb6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deploy/darwin/ITCS-4102-Project.app/Contents/MacOS/ITCS-4102-Project" afterPath="$PROJECT_DIR$/deploy/darwin/ITCS-4102-Project.app/Contents/MacOS/ITCS-4102-Project" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TicTacGo.go" afterPath="$PROJECT_DIR$/TicTacGo.go" />
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/moc.go" afterPath="$PROJECT_DIR$/moc.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/moc.h" afterPath="$PROJECT_DIR$/moc.h" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/moc.cpp" afterPath="$PROJECT_DIR$/moc.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/moc.go" afterPath="$PROJECT_DIR$/moc.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/moc.h" afterPath="$PROJECT_DIR$/moc.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/moc_moc.h" afterPath="$PROJECT_DIR$/moc_moc.h" />
+>>>>>>> 93aba97015d6fbc692a2b977f3ee5e96a88a2577
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,8 +30,13 @@
       <file leaf-file-name="TicTacGo.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TicTacGo.go">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="388">
               <caret line="260" column="17" lean-forward="false" selection-start-line="260" selection-start-column="17" selection-end-line="260" selection-end-column="17" />
+=======
+            <state relative-caret-position="-188">
+              <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+>>>>>>> 93aba97015d6fbc692a2b977f3ee5e96a88a2577
               <folding>
                 <element signature="e#14#96#0" expanded="true" />
               </folding>
@@ -36,14 +47,26 @@
       <file leaf-file-name="GoPlayBoard.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GoPlayBoard.go">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="-440">
               <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="25" />
+=======
+            <state relative-caret-position="162">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+>>>>>>> 93aba97015d6fbc692a2b977f3ee5e96a88a2577
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -56,6 +79,12 @@
       <find>Mwindow</find>
       <find>Mbutton</find>
       <find>button</find>
+      <find>label.</find>
+      <find>setHelper(</find>
+      <find>label.updateLabel</find>
+      <find>application.</find>
+      <find>application</find>
+      <find>mwindow</find>
     </findStrings>
     <replaceStrings>
       <replace>IsChecked</replace>
@@ -126,6 +155,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/joyrasmussen/Library/Preferences/Gogland1.0/idea.properties" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
@@ -185,7 +215,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -196,7 +226,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -211,12 +241,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+<<<<<<< HEAD
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/TicTacGo.go</url>
           <line>166</line>
         </line-breakpoint>
       </breakpoints>
+=======
+>>>>>>> 93aba97015d6fbc692a2b977f3ee5e96a88a2577
       <option name="time" value="1" />
     </breakpoint-manager>
     <watches-manager />
@@ -232,6 +265,27 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/TicTacGo.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#14#96#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GoPlayBoard.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 93aba97015d6fbc692a2b977f3ee5e96a88a2577
     <entry file="file://$APPLICATION_CONFIG_DIR$/idea.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -241,16 +295,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GoPlayBoard.go">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="-440">
           <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="25" />
+=======
+        <state relative-caret-position="162">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+>>>>>>> 93aba97015d6fbc692a2b977f3ee5e96a88a2577
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TicTacGo.go">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="388">
           <caret line="260" column="17" lean-forward="false" selection-start-line="260" selection-start-column="17" selection-end-line="260" selection-end-column="17" />
+=======
+        <state relative-caret-position="-188">
+          <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+>>>>>>> 93aba97015d6fbc692a2b977f3ee5e96a88a2577
           <folding>
             <element signature="e#14#96#0" expanded="true" />
           </folding>

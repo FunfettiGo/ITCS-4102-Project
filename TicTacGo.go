@@ -81,7 +81,7 @@ func NewGrid() {
 			setHelper(0,0)
 			label.UpdateLabel(myBoard.WhoTurn())
 
-			
+
 		}
 	})
 	layoutC0.AddWidget(button00, 0, core.Qt__AlignTrailing)

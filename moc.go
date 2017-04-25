@@ -686,6 +686,7 @@ func (ptr *MocLabel) HeightForWidthDefault(w int) int {
 	return 0
 }
 
+<<<<<<< HEAD
 //export callbackMocLabel_Close
 func callbackMocLabel_Close(ptr unsafe.Pointer) C.char {
 	if signal := qt.GetSignal(fmt.Sprint(ptr), "close"); signal != nil {
@@ -3416,6 +3417,11 @@ func (ptr *MWidget) TimerEventDefault(event core.QTimerEvent_ITF) {
 type MWindow_ITF interface {
 	widgets.QMainWindow_ITF
 	MWindow_PTR() *MWindow
+=======
+type MocLabel_ITF interface {
+	widgets.QLabel_ITF
+	MocLabel_PTR() *MocLabel
+>>>>>>> 93aba97015d6fbc692a2b977f3ee5e96a88a2577
 }
 
 func (ptr *MWindow) MWindow_PTR() *MWindow {
