@@ -14,13 +14,6 @@ type App struct {
 	widgets.QApplication
 
 }
-type MWidget struct{
-	widgets.QWidget
-
-}
-type MWindow struct{
-	widgets.QMainWindow
-}
 
 var application App
 var buttonArrays []interface{}
@@ -260,7 +253,7 @@ func popup(winner string) {
 		myBoard.Reset()
 	case 4194304:
 		//exit here
-		//application.QuitDefault()
+		application.QuitDefault()
 	}
 
 }
