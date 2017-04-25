@@ -241,9 +241,6 @@ func popup(winner string) {
 	var myWinner string
 	switch winner {
 
-		default:
-			myWinner = "There was an error."
-
 	default:
 		myWinner = "There was an error. "
 	case "x", "X":
