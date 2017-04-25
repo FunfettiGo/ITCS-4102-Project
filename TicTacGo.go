@@ -28,13 +28,14 @@ type MWindow struct{
 
 var application App
 var buttonArrays []interface{}
-
+var myBoard GoPlayBoard
 func main()  {
 
 	//this creates the game window
 
 	application = *NewApp(len(os.Args), os.Args)
-
+	myBoard = *NewGoPlayBoard()
+	myBoard.SwitchTurn()
 	NewGrid()
 
 
@@ -58,9 +59,9 @@ func NewGrid() {
 	label.ConnectUpdateLabel(func(s string) {
 		switch s {
 		case "x", "X":
-			label.SetText("Player 1's turn")
+			label.SetText("Player 1's turn (x)")
 		case "o", "O":
-			label.SetText("Player 2's turn")
+			label.SetText("Player 2's turn (o)")
 		}
 
 	})
@@ -77,7 +78,11 @@ func NewGrid() {
 	button00.ConnectClicked(func(checked bool) {
 		if button00.IsEnabled() {
 			button00.SetEnabled(false)
-			button00.SetText("x")
+			button00.SetText(myBoard.WhoTurn())
+			setHelper(0,0)
+			label.UpdateLabel(myBoard.WhoTurn())
+
+			
 		}
 	})
 	layoutC0.AddWidget(button00, 0, core.Qt__AlignTrailing)
@@ -86,8 +91,9 @@ func NewGrid() {
 	button01.ConnectClicked(func(checked bool) {
 		if button01.IsEnabled() {
 			button01.SetEnabled(false)
-			button01.SetText("x")
-			popup("Yo!")
+			button01.SetText(myBoard.WhoTurn())
+			setHelper(0,1)
+			label.UpdateLabel(myBoard.WhoTurn())
 		}
 	})
 
@@ -99,7 +105,9 @@ func NewGrid() {
 	button02.ConnectClicked(func(checked bool) {
 		if button02.IsEnabled() {
 			button02.SetEnabled(false)
-			button02.SetText("x")
+			button02.SetText(myBoard.WhoTurn())
+			setHelper(0,2)
+			label.UpdateLabel(myBoard.WhoTurn())
 		}
 	})
 	layoutC0.AddWidget(button02, 0, core.Qt__AlignTrailing)
@@ -111,7 +119,9 @@ func NewGrid() {
 	button10.ConnectClicked(func(checked bool) {
 		if button10.IsEnabled() {
 			button10.SetEnabled(false)
-			button10.SetText("x")
+			button10.SetText(myBoard.WhoTurn())
+			setHelper(1,0)
+			label.UpdateLabel(myBoard.WhoTurn())
 		}
 	})
 
@@ -122,7 +132,9 @@ func NewGrid() {
 		if button11.IsEnabled() {
 
 			button11.SetEnabled(false)
-			button11.SetText("x")
+			button11.SetText(myBoard.WhoTurn())
+			setHelper(1,1)
+			label.UpdateLabel(myBoard.WhoTurn())
 		}
 	})
 	layoutC1.AddWidget(button11, 0, core.Qt__AlignTrailing)
@@ -131,7 +143,9 @@ func NewGrid() {
 	button12.ConnectClicked(func(checked bool) {
 		if button12.IsEnabled() {
 			button12.SetEnabled(false)
-			button12.SetText("x")
+			button12.SetText(myBoard.WhoTurn())
+			setHelper(1,2)
+			label.UpdateLabel(myBoard.WhoTurn())
 		}
 	})
 	layoutC1.AddWidget(button12, 0, core.Qt__AlignTrailing)
@@ -148,7 +162,9 @@ func NewGrid() {
 	button20.ConnectClicked(func(checked bool) {
 		if button20.IsEnabled() {
 			button20.SetEnabled(false)
-			button20.SetText("x")
+			button20.SetText(myBoard.WhoTurn())
+			setHelper(2,0)
+			label.UpdateLabel(myBoard.WhoTurn())
 		}
 
 	})
@@ -159,8 +175,9 @@ func NewGrid() {
 	button21.ConnectClicked(func(checked bool) {
 		if button21.IsEnabled() {
 			button21.SetEnabled(false)
-			button21.SetText("x")
-		label.UpdateLabel("O")
+			button21.SetText(myBoard.WhoTurn())
+			setHelper(2,1)
+			label.UpdateLabel(myBoard.WhoTurn())
 		}
 	})
 	layoutC2.AddWidget(button21, 0, core.Qt__AlignTrailing)
@@ -171,8 +188,10 @@ func NewGrid() {
 		if button22.IsEnabled() {
 			button22.SetEnabled(false)
 
-			button22.SetText("x")
-			popup("Yo!")
+			button22.SetText(myBoard.WhoTurn())
+			setHelper(2,2)
+			label.UpdateLabel(myBoard.WhoTurn())
+
 		}
 	})
 
@@ -204,17 +223,39 @@ func reset(){
 	}
 
 }
+func setHelper(i int, j int)  {
+	myBoard.SetSquare(i, j)
+	checkIfGameOver()
+	myBoard.SwitchTurn()
+}
+func checkIfGameOver(){
+	winner := myBoard.GameOver()
+	if winner != "go"{
+		popup(winner)
+	}
+}
 
 
 func popup(winner string) {
-
-	message := widgets.NewQMessageBox2(widgets.QMessageBox__NoIcon, "Game Over", winner + "won.", widgets.QMessageBox__Ok, nil, 0)
+	var myWinner string
+	switch winner {
+	default:
+		myWinner = "There was an error."
+	case "x", "X":
+		myWinner = "Player X won!!!!!"
+	case "o", "O":
+		myWinner = "Player O won!!!!!"
+	case "tie":
+		myWinner = "No one won!!!"
+	}
+	message := widgets.NewQMessageBox2(widgets.QMessageBox__NoIcon, "Game Over", myWinner, widgets.QMessageBox__Ok, nil, 0)
 	message.AddButton3(widgets.QMessageBox__Cancel  )
 	rtn := message.Exec()
 	switch  rtn {
 	case 1024:
 		//repopulate here
 		reset()
+		myBoard.Reset()
 	case 4194304:
 		//exit here
 		application.QuitDefault()
