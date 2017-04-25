@@ -7,10 +7,7 @@ type GoPlayBoard struct{
 }
 
 func NewGoPlayBoard() (game *GoPlayBoard) {
-<<<<<<< HEAD
-	game.turn = "X"
-=======
->>>>>>> mystuff
+
 	game = &GoPlayBoard{}
 	return
 }
@@ -21,16 +18,12 @@ func (game *GoPlayBoard) SwitchTurn(){
 	}else{
 		game.turn = "x"
 	}
-<<<<<<< HEAD
+
 
 }
 
-func (game *GoPlayBoard) WhoTurn() string {
-=======
-}
 
 func (game *GoPlayBoard)WhoTurn() string {
->>>>>>> mystuff
 	return  game.turn
 }
 func (game *GoPlayBoard) SetSquare(i int, y int) {
@@ -60,13 +53,8 @@ func (game *GoPlayBoard) GameOver() string {
 	}else if game.board[0][0] != "" &&
 		game.board[0][0] == game.board[1][1] && game.board[0][0] == game.board[2][2]{
 		return game.turn
-<<<<<<< HEAD
-	}else if game.board[2][2] != "" &&
-		game.board[2][2] == game.board[1][1] && game.board[2][2] == game.board[0][2]{
-=======
 	}else if game.board[0][2] != "" &&
 		game.board[0][2] == game.board[1][1] && game.board[0][2] == game.board[2][0]{
->>>>>>> mystuff
 		return game.turn
 	}else{
 		for i := 0; i < 3; i++{

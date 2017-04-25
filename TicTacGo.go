@@ -25,7 +25,6 @@ func main()  {
 
 	application = *NewApp(len(os.Args), os.Args)
 	myBoard = *NewGoPlayBoard()
-
 	myBoard.SwitchTurn()
 	NewGrid()
 

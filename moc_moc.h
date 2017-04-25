@@ -19,74 +19,6 @@
 QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_App_t {
-    QByteArrayData data[1];
-    char stringdata0[4];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_App_t, stringdata0) + ofs \
-        - idx * sizeof(QByteArrayData)) \
-    )
-static const qt_meta_stringdata_App_t qt_meta_stringdata_App = {
-    {
-QT_MOC_LITERAL(0, 0, 3) // "App"
-
-    },
-    "App"
-};
-#undef QT_MOC_LITERAL
-
-static const uint qt_meta_data_App[] = {
-
- // content:
-       7,       // revision
-       0,       // classname
-       0,    0, // classinfo
-       0,    0, // methods
-       0,    0, // properties
-       0,    0, // enums/sets
-       0,    0, // constructors
-       0,       // flags
-       0,       // signalCount
-
-       0        // eod
-};
-
-void App::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
-{
-    Q_UNUSED(_o);
-    Q_UNUSED(_id);
-    Q_UNUSED(_c);
-    Q_UNUSED(_a);
-}
-
-const QMetaObject App::staticMetaObject = {
-    { &QApplication::staticMetaObject, qt_meta_stringdata_App.data,
-      qt_meta_data_App,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
-};
-
-
-const QMetaObject *App::metaObject() const
-{
-    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
-}
-
-void *App::qt_metacast(const char *_clname)
-{
-    if (!_clname) return Q_NULLPTR;
-    if (!strcmp(_clname, qt_meta_stringdata_App.stringdata0))
-        return static_cast<void*>(const_cast< App*>(this));
-    return QApplication::qt_metacast(_clname);
-}
-
-int App::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
-{
-    _id = QApplication::qt_metacall(_c, _id, _a);
-    if (_id < 0)
-        return _id;
-    return _id;
-}
 struct qt_meta_stringdata_MocLabel_t {
     QByteArrayData data[4];
     char stringdata0[25];
@@ -193,6 +125,74 @@ void MocLabel::updateLabel(QString _t1)
 {
     void *_a[] = { Q_NULLPTR, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
+}
+struct qt_meta_stringdata_App_t {
+    QByteArrayData data[1];
+    char stringdata0[4];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+    qptrdiff(offsetof(qt_meta_stringdata_App_t, stringdata0) + ofs \
+        - idx * sizeof(QByteArrayData)) \
+    )
+static const qt_meta_stringdata_App_t qt_meta_stringdata_App = {
+    {
+QT_MOC_LITERAL(0, 0, 3) // "App"
+
+    },
+    "App"
+};
+#undef QT_MOC_LITERAL
+
+static const uint qt_meta_data_App[] = {
+
+ // content:
+       7,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       0,    0, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+       0        // eod
+};
+
+void App::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    Q_UNUSED(_o);
+    Q_UNUSED(_id);
+    Q_UNUSED(_c);
+    Q_UNUSED(_a);
+}
+
+const QMetaObject App::staticMetaObject = {
+    { &QApplication::staticMetaObject, qt_meta_stringdata_App.data,
+      qt_meta_data_App,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+};
+
+
+const QMetaObject *App::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+}
+
+void *App::qt_metacast(const char *_clname)
+{
+    if (!_clname) return Q_NULLPTR;
+    if (!strcmp(_clname, qt_meta_stringdata_App.stringdata0))
+        return static_cast<void*>(const_cast< App*>(this));
+    return QApplication::qt_metacast(_clname);
+}
+
+int App::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QApplication::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    return _id;
 }
 QT_WARNING_POP
 QT_END_MOC_NAMESPACE

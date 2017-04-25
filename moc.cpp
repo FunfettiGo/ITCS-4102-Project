@@ -55,51 +55,6 @@
 #include <QWindow>
 
 
-class App: public QApplication
-{
-Q_OBJECT
-public:
-	App(int &argc, char **argv) : QApplication(argc, argv) {};
-	 ~App() { callbackApp_DestroyApp(this); };
-	bool event(QEvent * e) { return callbackApp_Event(this, e) != 0; };
-	void aboutQt() { callbackApp_AboutQt(this); };
-	void closeAllWindows() { callbackApp_CloseAllWindows(this); };
-	void Signal_FocusChanged(QWidget * old, QWidget * now) { callbackApp_FocusChanged(this, old, now); };
-	void setAutoSipEnabled(const bool enabled) { callbackApp_SetAutoSipEnabled(this, enabled); };
-	void setStyleSheet(const QString & sheet) { QByteArray t542ebc = sheet.toUtf8(); Moc_PackedString sheetPacked = { const_cast<char*>(t542ebc.prepend("WHITESPACE").constData()+10), t542ebc.size()-10 };callbackApp_SetStyleSheet(this, sheetPacked); };
-	bool autoSipEnabled() const { return callbackApp_AutoSipEnabled(const_cast<void*>(static_cast<const void*>(this))) != 0; };
-	void Signal_ApplicationDisplayNameChanged() { callbackApp_ApplicationDisplayNameChanged(this); };
-	void Signal_ApplicationStateChanged(Qt::ApplicationState state) { callbackApp_ApplicationStateChanged(this, state); };
-	void Signal_CommitDataRequest(QSessionManager & manager) { callbackApp_CommitDataRequest(this, static_cast<QSessionManager*>(&manager)); };
-	void Signal_FocusObjectChanged(QObject * focusObject) { callbackApp_FocusObjectChanged(this, focusObject); };
-	void Signal_FocusWindowChanged(QWindow * focusWindow) { callbackApp_FocusWindowChanged(this, focusWindow); };
-	void Signal_FontDatabaseChanged() { callbackApp_FontDatabaseChanged(this); };
-	void Signal_LastWindowClosed() { callbackApp_LastWindowClosed(this); };
-	void Signal_LayoutDirectionChanged(Qt::LayoutDirection direction) { callbackApp_LayoutDirectionChanged(this, direction); };
-	void Signal_PaletteChanged(const QPalette & palette) { callbackApp_PaletteChanged(this, const_cast<QPalette*>(&palette)); };
-	void Signal_PrimaryScreenChanged(QScreen * screen) { callbackApp_PrimaryScreenChanged(this, screen); };
-	void Signal_SaveStateRequest(QSessionManager & manager) { callbackApp_SaveStateRequest(this, static_cast<QSessionManager*>(&manager)); };
-	void Signal_ScreenAdded(QScreen * screen) { callbackApp_ScreenAdded(this, screen); };
-	void Signal_ScreenRemoved(QScreen * screen) { callbackApp_ScreenRemoved(this, screen); };
-	void Signal_AboutToQuit() { callbackApp_AboutToQuit(this); };
-	void quit() { callbackApp_Quit(this); };
-	bool eventFilter(QObject * watched, QEvent * event) { return callbackApp_EventFilter(this, watched, event) != 0; };
-	void childEvent(QChildEvent * event) { callbackApp_ChildEvent(this, event); };
-	void connectNotify(const QMetaMethod & sign) { callbackApp_ConnectNotify(this, const_cast<QMetaMethod*>(&sign)); };
-	void customEvent(QEvent * event) { callbackApp_CustomEvent(this, event); };
-	void deleteLater() { callbackApp_DeleteLater(this); };
-	void Signal_Destroyed(QObject * obj) { callbackApp_Destroyed(this, obj); };
-	void disconnectNotify(const QMetaMethod & sign) { callbackApp_DisconnectNotify(this, const_cast<QMetaMethod*>(&sign)); };
-	void Signal_ObjectNameChanged(const QString & objectName) { QByteArray taa2c4f = objectName.toUtf8(); Moc_PackedString objectNamePacked = { const_cast<char*>(taa2c4f.prepend("WHITESPACE").constData()+10), taa2c4f.size()-10 };callbackApp_ObjectNameChanged(this, objectNamePacked); };
-	void timerEvent(QTimerEvent * event) { callbackApp_TimerEvent(this, event); };
-	
-signals:
-public slots:
-private:
-};
-
-Q_DECLARE_METATYPE(App*)
-
 class MocLabel: public QLabel
 {
 Q_OBJECT
@@ -192,6 +147,51 @@ private:
 };
 
 Q_DECLARE_METATYPE(MocLabel*)
+
+class App: public QApplication
+{
+Q_OBJECT
+public:
+	App(int &argc, char **argv) : QApplication(argc, argv) {};
+	 ~App() { callbackApp_DestroyApp(this); };
+	bool event(QEvent * e) { return callbackApp_Event(this, e) != 0; };
+	void aboutQt() { callbackApp_AboutQt(this); };
+	void closeAllWindows() { callbackApp_CloseAllWindows(this); };
+	void Signal_FocusChanged(QWidget * old, QWidget * now) { callbackApp_FocusChanged(this, old, now); };
+	void setAutoSipEnabled(const bool enabled) { callbackApp_SetAutoSipEnabled(this, enabled); };
+	void setStyleSheet(const QString & sheet) { QByteArray t542ebc = sheet.toUtf8(); Moc_PackedString sheetPacked = { const_cast<char*>(t542ebc.prepend("WHITESPACE").constData()+10), t542ebc.size()-10 };callbackApp_SetStyleSheet(this, sheetPacked); };
+	bool autoSipEnabled() const { return callbackApp_AutoSipEnabled(const_cast<void*>(static_cast<const void*>(this))) != 0; };
+	void Signal_ApplicationDisplayNameChanged() { callbackApp_ApplicationDisplayNameChanged(this); };
+	void Signal_ApplicationStateChanged(Qt::ApplicationState state) { callbackApp_ApplicationStateChanged(this, state); };
+	void Signal_CommitDataRequest(QSessionManager & manager) { callbackApp_CommitDataRequest(this, static_cast<QSessionManager*>(&manager)); };
+	void Signal_FocusObjectChanged(QObject * focusObject) { callbackApp_FocusObjectChanged(this, focusObject); };
+	void Signal_FocusWindowChanged(QWindow * focusWindow) { callbackApp_FocusWindowChanged(this, focusWindow); };
+	void Signal_FontDatabaseChanged() { callbackApp_FontDatabaseChanged(this); };
+	void Signal_LastWindowClosed() { callbackApp_LastWindowClosed(this); };
+	void Signal_LayoutDirectionChanged(Qt::LayoutDirection direction) { callbackApp_LayoutDirectionChanged(this, direction); };
+	void Signal_PaletteChanged(const QPalette & palette) { callbackApp_PaletteChanged(this, const_cast<QPalette*>(&palette)); };
+	void Signal_PrimaryScreenChanged(QScreen * screen) { callbackApp_PrimaryScreenChanged(this, screen); };
+	void Signal_SaveStateRequest(QSessionManager & manager) { callbackApp_SaveStateRequest(this, static_cast<QSessionManager*>(&manager)); };
+	void Signal_ScreenAdded(QScreen * screen) { callbackApp_ScreenAdded(this, screen); };
+	void Signal_ScreenRemoved(QScreen * screen) { callbackApp_ScreenRemoved(this, screen); };
+	void Signal_AboutToQuit() { callbackApp_AboutToQuit(this); };
+	void quit() { callbackApp_Quit(this); };
+	bool eventFilter(QObject * watched, QEvent * event) { return callbackApp_EventFilter(this, watched, event) != 0; };
+	void childEvent(QChildEvent * event) { callbackApp_ChildEvent(this, event); };
+	void connectNotify(const QMetaMethod & sign) { callbackApp_ConnectNotify(this, const_cast<QMetaMethod*>(&sign)); };
+	void customEvent(QEvent * event) { callbackApp_CustomEvent(this, event); };
+	void deleteLater() { callbackApp_DeleteLater(this); };
+	void Signal_Destroyed(QObject * obj) { callbackApp_Destroyed(this, obj); };
+	void disconnectNotify(const QMetaMethod & sign) { callbackApp_DisconnectNotify(this, const_cast<QMetaMethod*>(&sign)); };
+	void Signal_ObjectNameChanged(const QString & objectName) { QByteArray taa2c4f = objectName.toUtf8(); Moc_PackedString objectNamePacked = { const_cast<char*>(taa2c4f.prepend("WHITESPACE").constData()+10), taa2c4f.size()-10 };callbackApp_ObjectNameChanged(this, objectNamePacked); };
+	void timerEvent(QTimerEvent * event) { callbackApp_TimerEvent(this, event); };
+	
+signals:
+public slots:
+private:
+};
+
+Q_DECLARE_METATYPE(App*)
 
 int App_App_QRegisterMetaType()
 {
