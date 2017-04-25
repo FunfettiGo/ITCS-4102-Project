@@ -19,13 +19,14 @@ var application App
 var buttonArrays []interface{}
 var myBoard GoPlayBoard
 
-
 func main()  {
 
 	//this creates the game window
 
 	application = *NewApp(len(os.Args), os.Args)
 	myBoard = *NewGoPlayBoard()
+
+	myBoard.SwitchTurn()
 	NewGrid()
 
 
@@ -49,14 +50,14 @@ func NewGrid() {
 	label.ConnectUpdateLabel(func(s string) {
 		switch s {
 		case "x", "X":
-			label.SetText("Player X's turn")
+			label.SetText("Player 1's turn (x)")
 		case "o", "O":
-			label.SetText("Player O's turn")
+			label.SetText("Player 2's turn (o)")
 		}
 
 	})
 
-	label.SetText("Player X's turn")
+	label.SetText("Player X's turn (x)")
 	layout.AddWidget(label, 0, 0)
 
 
@@ -71,6 +72,8 @@ func NewGrid() {
 			button00.SetText(myBoard.WhoTurn())
 			setHelper(0, 0)
 			label.UpdateLabel(myBoard.WhoTurn())
+
+
 		}
 	})
 	layoutC0.AddWidget(button00, 0, core.Qt__AlignTrailing)
@@ -96,6 +99,7 @@ func NewGrid() {
 			button02.SetEnabled(false)
 			button02.SetText(myBoard.WhoTurn())
 			setHelper(0, 2)
+
 			label.UpdateLabel(myBoard.WhoTurn())
 		}
 	})
@@ -153,6 +157,7 @@ func NewGrid() {
 			button20.SetEnabled(false)
 			button20.SetText(myBoard.WhoTurn())
 			setHelper( 2, 0)
+
 			label.UpdateLabel(myBoard.WhoTurn())
 		}
 
@@ -168,6 +173,7 @@ func NewGrid() {
 			setHelper( 2, 1)
 			label.UpdateLabel(myBoard.WhoTurn())
 
+
 		}
 	})
 	layoutC2.AddWidget(button21, 0, core.Qt__AlignTrailing)
@@ -182,6 +188,7 @@ func NewGrid() {
 			setHelper( 2, 2)
 			label.UpdateLabel(myBoard.WhoTurn())
 			//popup("Yo!")
+
 		}
 	})
 
@@ -214,6 +221,7 @@ func reset(){
 
 }
 
+
 func setHelper(i int, j int) {
 	myBoard.SetSquare(i, j)
 	checkIfGameOver()
@@ -233,8 +241,12 @@ func checkIfGameOver(){
 func popup(winner string) {
 	var myWinner string
 	switch winner {
+
 		default:
 			myWinner = "There was an error."
+
+	default:
+		myWinner = "There was an error. "
 	case "x", "X":
 		myWinner = "Player X won!!!!!"
 	case "o", "O":
@@ -243,15 +255,21 @@ func popup(winner string) {
 		myWinner = "No one won!!!"
 
 	}
-	message := widgets.NewQMessageBox2(widgets.QMessageBox__NoIcon, "Game Over", myWinner, widgets.QMessageBox__Ok, nil, 0)
-	message.AddButton3(widgets.QMessageBox__Cancel  )
+
+
+	myWinner += "\nPlay again?"
+	message := widgets.NewQMessageBox2(widgets.QMessageBox__NoIcon, "Game Over", myWinner, widgets.QMessageBox__Yes, nil, 0)
+	message.AddButton3(widgets.QMessageBox__No  )
 	rtn := message.Exec()
+
 	switch  rtn {
-	case 1024:
+	case 16384:
 		//repopulate here
+
 		reset()
 		myBoard.Reset()
-	case 4194304:
+
+	case 65536:
 		//exit here
 		application.QuitDefault()
 	}

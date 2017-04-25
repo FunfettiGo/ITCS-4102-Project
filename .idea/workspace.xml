@@ -4,10 +4,21 @@
     <list default="true" id="50bb8513-6d3e-4dfd-8a21-3f8c47616fb6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TicTacGo.go" afterPath="$PROJECT_DIR$/TicTacGo.go" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/moc.go" afterPath="$PROJECT_DIR$/moc.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/moc.h" afterPath="$PROJECT_DIR$/moc.h" />
+=======
+>>>>>>> mystuff
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/moc.cpp" afterPath="$PROJECT_DIR$/moc.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/moc.go" afterPath="$PROJECT_DIR$/moc.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/moc.h" afterPath="$PROJECT_DIR$/moc.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/moc_moc.h" afterPath="$PROJECT_DIR$/moc_moc.h" />
+<<<<<<< HEAD
+=======
+>>>>>>> 93aba97015d6fbc692a2b977f3ee5e96a88a2577
+>>>>>>> mystuff
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,8 +36,18 @@
       <file leaf-file-name="TicTacGo.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TicTacGo.go">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="-188">
               <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="388">
+              <caret line="260" column="17" lean-forward="false" selection-start-line="260" selection-start-column="17" selection-end-line="260" selection-end-column="17" />
+=======
+            <state relative-caret-position="-188">
+              <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+>>>>>>> 93aba97015d6fbc692a2b977f3ee5e96a88a2577
+>>>>>>> mystuff
               <folding>
                 <element signature="e#14#96#0" expanded="true" />
               </folding>
@@ -37,8 +58,18 @@
       <file leaf-file-name="GoPlayBoard.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GoPlayBoard.go">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="162">
               <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="-440">
+              <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="25" />
+=======
+            <state relative-caret-position="162">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+>>>>>>> 93aba97015d6fbc692a2b977f3ee5e96a88a2577
+>>>>>>> mystuff
               <folding />
             </state>
           </provider>
@@ -226,6 +257,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/TicTacGo.go</url>
+          <line>166</line>
+        </line-breakpoint>
+      </breakpoints>
+=======
+>>>>>>> 93aba97015d6fbc692a2b977f3ee5e96a88a2577
+>>>>>>> mystuff
       <option name="time" value="1" />
     </breakpoint-manager>
     <watches-manager />
@@ -241,6 +284,11 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> mystuff
     <entry file="file://$PROJECT_DIR$/TicTacGo.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -259,6 +307,10 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+>>>>>>> 93aba97015d6fbc692a2b977f3ee5e96a88a2577
+>>>>>>> mystuff
     <entry file="file://$APPLICATION_CONFIG_DIR$/idea.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -268,16 +320,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GoPlayBoard.go">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="162">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="-440">
+          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="25" />
+=======
+        <state relative-caret-position="162">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+>>>>>>> 93aba97015d6fbc692a2b977f3ee5e96a88a2577
+>>>>>>> mystuff
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TicTacGo.go">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="-188">
           <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="388">
+          <caret line="260" column="17" lean-forward="false" selection-start-line="260" selection-start-column="17" selection-end-line="260" selection-end-column="17" />
+=======
+        <state relative-caret-position="-188">
+          <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+>>>>>>> 93aba97015d6fbc692a2b977f3ee5e96a88a2577
+>>>>>>> mystuff
           <folding>
             <element signature="e#14#96#0" expanded="true" />
           </folding>
